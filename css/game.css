@@ -1,0 +1,142 @@
+#loader{
+    animation: rotation 1.5s linear infinite;
+    color: blueviolet;
+    width: 100px;
+    height: 100px;
+    border: 6px solid #6757d9;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.container{
+    width: 700px;
+    display: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.header div{
+    display: flex;
+    align-items: center;
+}
+
+.header p{
+    color: #6757d9;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right:10px ;
+}
+
+.header span{
+    display: inline-block;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-align: center;
+    color: #6757d9;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#question-box{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    background-color: #6757d9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 60px 0 30px;
+}
+
+.answer-text{
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-align: left;
+    border: 2px solid #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.answer-text:hover{
+    background-color: #eeedfb;
+    border: 2px solid #fff;
+}
+
+#next-button,
+#finish-button{
+    color: #6757d9;
+    font-size: 1rem;
+    background-color: #eeedfb;
+    border: 2px solid #6757d9;
+    border-radius: 15px;
+    padding: 8px 15px;
+    margin: 20px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#next-button:hover,
+#finish-button:hover{
+    background-color: #6757d9;
+    color: #fff;
+}
+
+.correct{
+    background-color: #5bd7bc;
+}
+
+.incorrect{
+    background-color: #fe6681;
+}
+
+.correct:hover{
+    background-color: #5bd7bc;
+}
+
+.incorrect:hover{
+    background-color: #fe6681;
+}
+
+#error{
+    display: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #6757d9;
+    color: #fff;
+    width: 800px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 3px #fff;
+}
